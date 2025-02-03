@@ -9,8 +9,8 @@ public class OrderDiscountTest {
     void testDiscountForMaleSenior() {
         // Мужчина пенсионного возраста (65+)
         User maleSenior = new User("Иван", "Иванов", 67, "male");
-        Order busOrder = new Bus(1, maleSenior);
-        Order tramOrder = new Tram(2, maleSenior); // Убедитесь, что класс Tram подключен
+        Order busOrder = new Consultation(1, maleSenior);
+        Order tramOrder = new Surgery(2, maleSenior); // Убедитесь, что класс Tram подключен
 
         // Отладочный вывод
         System.out.println("Actual discount for male senior in Bus: " + busOrder.countDiscount());
@@ -25,8 +25,8 @@ public class OrderDiscountTest {
     void testDiscountForFemaleSenior() {
         // Женщина пенсионного возраста (60+)
         User femaleSenior = new User("Мария", "Петрова", 61, "female");
-        Order busOrder = new Bus(3, femaleSenior);
-        Order tramOrder = new Tram(4, femaleSenior); // Убедитесь, что класс Tram подключен
+        Order busOrder = new Consultation(3, femaleSenior);
+        Order tramOrder = new Surgery(4, femaleSenior); // Убедитесь, что класс Tram подключен
 
         // Отладочный вывод
         System.out.println("Actual discount for female senior in Bus: " + busOrder.countDiscount());
@@ -41,8 +41,8 @@ public class OrderDiscountTest {
     void testNoDiscountForYoungUser() {
         // Молодой пользователь (не пенсионер)
         User youngUser = new User("Алексей", "Сидоров", 30, "male");
-        Order busOrder = new Bus(5, youngUser);
-        Order tramOrder = new Tram(6, youngUser); // Убедитесь, что класс Tram подключен
+        Order busOrder = new Consultation(5, youngUser);
+        Order tramOrder = new Surgery(6, youngUser); // Убедитесь, что класс Tram подключен
 
         // Отладочный вывод
         System.out.println("Actual discount for young user in Bus: " + busOrder.countDiscount());

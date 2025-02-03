@@ -12,8 +12,8 @@ public class OrderTest {
         User user2 = new User("Petr", "Petrov", 15, "male"); // Без скидки
 
         // Создание заказов для пользователей
-        Order busOrder = new Bus(1, user1); // Пример с автобусом
-        Order tramOrder = new Tram(2, user2); // Пример с трамваем
+        Order busOrder = new Consultation(1, user1); // Пример с автобусом
+        Order tramOrder = new Surgery(2, user2); // Пример с трамваем
 
         // Проверка стоимости заказов
         assertEquals(31.5, busOrder.getCost()); // 10% скидка от 35

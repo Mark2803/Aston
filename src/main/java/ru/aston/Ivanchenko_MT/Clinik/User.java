@@ -1,4 +1,3 @@
-
 package ru.aston.Ivanchenko_MT.Clinik;
 
 public class User {

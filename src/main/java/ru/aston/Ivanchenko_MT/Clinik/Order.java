@@ -17,10 +17,7 @@ public abstract class Order {
 
     // Абстрактные методы
     public abstract double countDiscount();
-
     public abstract String getOrder();
-
     public abstract double getCost();
-
     public abstract String getUserSurname();
 }

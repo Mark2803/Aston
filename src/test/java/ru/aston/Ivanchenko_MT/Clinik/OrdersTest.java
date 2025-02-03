@@ -11,8 +11,8 @@ public class OrdersTest {
         // Создаем заказы
         User user1 = new User("Иван", "Иванов", 30, "male");
         User user2 = new User("Анна", "Петрова", 65, "female"); // Пенсионерка, скидка 10%
-        Order order1 = new Bus(1, user1);
-        Order order2 = new Tram(2, user2);
+        Order order1 = new Consultation(1, user1);
+        Order order2 = new Surgery(2, user2);
 
         // Добавляем заказы в список
         List<Order> orderList = new ArrayList<>();
@@ -32,8 +32,8 @@ public class OrdersTest {
         // Создаем заказы
         User user1 = new User("Иван", "Сидоров", 30, "male");
         User user2 = new User("Анна", "Иванова", 65, "female"); // Пенсионерка, скидка 10%
-        Order order1 = new Bus(1, user1);
-        Order order2 = new Tram(2, user2);
+        Order order1 = new Consultation(1, user1);
+        Order order2 = new Surgery(2, user2);
 
         // Добавляем заказы в список
         List<Order> orderList = new ArrayList<>();

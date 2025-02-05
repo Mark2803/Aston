@@ -12,6 +12,6 @@ public class VetClinicApp {
 
         // Пример вывода информации о заказах
         System.out.println(consultation.getOrder());
-        System.out.println(surgery.getOrder());
+      //  System.out.println(surgery.getOrder());
     }
 }

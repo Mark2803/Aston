@@ -1,0 +1,32 @@
+<plugins>
+    <!-- Maven JAR Plugin for packaging -->
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>jar</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+
+    <!-- Maven Exec Plugin for running your application -->
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>java</goal>
+                </goals>
+                <configuration>
+                    <mainClass>ru.aston.Ivanchenko_MT.Clinik.VetClinicApp</mainClass>
+                </configuration>
+            </execution>
+        </executions>
+    </plugin>
+</plugins>
